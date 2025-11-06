@@ -1,0 +1,133 @@
+/* === Global === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f0ff, #f7fbff);
+  background-color: black;
+}
+
+header {
+  background: linear-gradient(90deg, #0b3d91, #1b6be0);
+  color: white;
+  padding: 18px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+/* === Main Container === */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.note {
+  color: #6b7280;
+  font-size: 0.9em;
+}
+
+/* === Party Cards === */
+.party-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.party {
+  background: #f8fbff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.party:hover {
+  transform: translateY(-5px);
+}
+
+.party img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.party h3 {
+  margin: 8px 0;
+  font-size: 1.05em;
+}
+
+.vote-btn {
+  background: #0b3d91;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vote-btn:hover {
+  background: #003070;
+}
+
+/* === Controls === */
+.controls {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cancel-btn {
+  background: #d9534f;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-btn {
+  background: #ff7b00;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* === Results Page Extras === */
+.winner-section {
+  margin-top: 25px;
+  background: #f8fbff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.winner-section .highlight {
+  color: #0b3d91;
+  font-weight: 700;
+}
+
+.slogan {
+  font-style: italic;
+  color: #333;
+  margin-top: 8px;
+  font-size: 1.1em;
+}

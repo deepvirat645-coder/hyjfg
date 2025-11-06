@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihar Election Results</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>📊 Bihar Election Results</header>
+
+  <div class="container">
+    <h2>Live Voting Percentage</h2>
+    <canvas id="voteChart" width="400" height="250"></canvas>
+
+    <div id="winnerSection" class="winner-section"></div>
+
+    <div class="controls">
+      <button onclick="goBack()" class="result-btn">Back to Voting</button>
+      <button onclick="resetAll()" class="cancel-btn">Reset All Data</button>
+    </div>
+  </div>
+
+  <script src="results.js"></script>
+</body>
+</html>
